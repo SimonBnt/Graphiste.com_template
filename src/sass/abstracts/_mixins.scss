@@ -1,5 +1,5 @@
 @mixin respondTo($breakpoint) {
-    @if ($breakpoint == sm) {
+    @if ($breakpoint == mobile) {
         @media (min-width: 320px) {
             @content;
         }

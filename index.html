@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,30 @@
     <link rel="stylesheet" href="/assets/css/styles.min.css">
 
     <!-- script js -->
+
+    <script src="/assets/js/showHideDescription.js" defer></script>
 </head>
 <body>
-    <main>
+    <main id="main">
+        <h1 id="title">cave à vin interractive</h1>
+        <div id="wineCaveImgContainer">
+            <img id="wineCaveImg" src="/assets/img/cave_a_vin.png" alt="Cave à vin">
+            <div id="shelfGridContainer">
+                <div id="bite" class="shelfs">france</div>
+                <div class="shelfs">italie</div>
+                <div class="shelfs">Espagne</div>
+                <div class="shelfs">bite</div>
+            </div>
+            <div id="descriptionMainContainers" class="hide">
+                <div class="descriptionContainers">
+                    <img class="wineBottleIcons" src="https://cdn-icons-png.flaticon.com/128/45/45637.png" alt="">
+                    <div class="descriptions">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quia hic laboriosam tempore pariatur nihil consectetur? Ut fugiat veniam distinctio.</p>
+                    </div>
+                </div>
+                <a class="galleryCta" href="/wineGallery.html#frenchWineSection">Voir dans la gallerie</a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
