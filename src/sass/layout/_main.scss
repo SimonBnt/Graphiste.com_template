@@ -1,4 +1,8 @@
 main {
+    .defaultSection {
+        padding: 4rem 16rem;
+    }
+
     #home {
         position: relative;
         z-index: 1;
@@ -17,7 +21,7 @@ main {
             z-index: -900;
             width: 100%;
             background-color: black;
-            opacity: 0.4;
+            opacity: 0.6;
             height: 100%;
         }
         
@@ -114,6 +118,258 @@ main {
     }
 
     #news {
+        color: white;
+
+        #newsTopContainer {
+            display: flex;
+            align-items: center;
+            margin: 4rem 0;
+
+            h2 {
+                text-align: left;
+                font-size: 1.5rem;
+            }
+
+            div {
+                margin-left: auto;
+                text-transform: uppercase;
+                opacity: 0.5;
+            }
+        }
+
+        #newsMainContainer {
+            display: grid;
+            justify-content: center;
+            gap: 0 2rem;
+
+            #leftNewsContainer {
+                grid-column: 1;
+                grid-row: 1/3;
+
+                img {
+                    height: 515px;
+                    object-fit: cover;
+                    border-radius: 0.25rem;
+                    box-shadow: 2px 2px 5px black;
+                }
+            }
+
+            #rightNewsContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem 0;
+
+                .a {
+                    grid-column: 2;
+                    grid-row: 1;
+                    
+                    img {
+                        height: 240px;
+                        width: 528px;
+                        object-fit: cover;
+                        border-radius: 0.25rem;
+                        box-shadow: 2px 2px 5px black;
+                    }
+                }
+
+                .b {
+                    grid-column: 2;
+                    grid-row: 2;
+                    
+                    img {
+                        height: 240px;
+                        width: 528px;
+                        object-fit: cover;
+                        border-radius: 0.25rem;
+                        box-shadow: 2px 2px 5px black;
+                    }
+                }
+            }
+
+            .news {
+                position: relative;
+
+                div {
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                    background-color: #FB4E4F;
+                    border-radius: 0.25rem;
+                    padding: 0.5rem;
+                    color: #152535;
+                    text-transform: uppercase;
+                }
+
+                h3 {
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 2rem;
+                    background-color: #152535;
+                    border-radius: 0.25rem;
+                    padding: 0.5rem;
+                }
+                
+                p {
+                    font-size: .75rem;
+                    background-color: #152535;
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 2rem;
+                    border-radius: 0.25rem;
+                    padding: 0.5rem;
+                }
+            }
+
+            #rightNewsContainer {
+                grid-column: 2/2;
+            }
+        }
+    }
+
+    #catalogue {
+        color: white;
+        background-color: #090f16;
         
+        #catalogueTopContainer {
+            display: flex;
+            align-items: center;
+            margin: 4rem 0;
+
+            h2 {
+                font-size: 1.5rem;
+                text-align: left;
+            }
+
+            div {
+                margin-left: auto;
+                text-transform: uppercase;
+                opacity: 0.5;
+            }
+        }
+
+        #catalogueContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem 2rem;
+
+            img {
+                width: 180px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: .25rem;
+                box-shadow: 2px 2px 5px black;
+            }
+        }
+    }
+
+    #social {
+        color: white;
+
+        #socialSectionTopContainer {
+            display: flex;
+            align-items: center;
+            margin: 4rem 0;
+
+            h2 {
+                font-size: 1.5rem;
+                text-align: left;
+            }
+
+            div {
+                margin-left: auto;
+                text-transform: uppercase;
+                opacity: 0.5;
+            }
+        }
+
+        #messageContainer {
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 2rem;
+
+            input[type=text] {
+                color: white;
+                font-size: 1rem;
+                width: 500px;
+                border: none;
+                background-color: unset;
+                border-bottom: solid 2px white;
+                padding: 0.5rem;
+            }
+
+            input[type=submit] {
+                border: solid #FB4E4F 2px;
+                border-radius: 0.25rem;
+                padding: 0.5rem;
+                text-decoration: none;
+                color: #FB4E4F;
+                background-color: unset;
+            }
+        }
+
+        #socialSectionMainContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .comMainContainer {
+                display: flex;
+                gap: 4rem 2rem;
+                margin-bottom: 4rem;
+    
+                .avatarContainer {
+                    img {
+                        width: 36px;
+                    }
+                }
+    
+                .comContainer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+    
+                    .nameContainer {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 2rem;
+    
+                        .name {
+                            font-size: 1.25rem;
+                        }
+                    }
+    
+                    .com {
+                        border: solid #333 2px;
+                        padding: .5rem;
+                        border-radius: .25rem;
+                        width: 1000px;
+                        line-height: 1.5rem;
+                    }
+    
+                    .comBottomContainer {
+                        .thumbsContainer {
+                            width: 1000px;
+                            display: flex;
+                            gap: 0 1rem;
+    
+                            img {
+                                width: 24px;
+                                max-width: unset !important;
+                            }
+    
+                            p {
+                                margin-left: auto;
+                                border-bottom: solid white 2px;
+                                padding: 0.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
