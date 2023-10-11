@@ -1,134 +1,119 @@
-#main {
-    height: 100dvh;
-    position: relative;
-    
-    #title {
-        position: absolute;
-        font-size: 1.5rem;
-        top: 1rem;
-        left: 0;
-        right: 0;
-        text-align: center;
-        color: white;
-        z-index: 1000;
-        text-transform: uppercase;
-    }
-    
-    #wineCaveImgContainer {
-        height: fit-content;
+main {
+    #home {
         position: relative;
-
-        #wineCaveImg {
-            z-index: -1000;
-            object-fit: cover;
-            box-sizing: border-box;
-            display: block;
-            min-width: 320px;
-            
-            @include respondTo(md) {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        #shelfGridContainer {
+        z-index: 1;
+        
+        #homeBackgroundImg {
             position: absolute;
-            top: -8rem;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            color: white;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            object-fit: cover;
+            z-index: -1000;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #darkFilter {
+            position: absolute;
+            object-fit: cover;
+            z-index: -900;
+            width: 100%;
+            background-color: black;
+            opacity: 0.4;
+            height: 100%;
+        }
+        
+        #homeMainContainer {
+            display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            height: 100%;
+            padding: 8rem 4rem;
+    
+            .left {
+                img {
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 0.25rem;
+                    box-shadow: 2px 2px 5px black;
+                }
+            }
+    
+            .right {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                line-height: 2rem;
 
-            .shelfs {
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                transition: 0.4s;
-                font-weight: bolder;
-                position: relative;
-                border: solid #333 2px ;
-                border-radius: 0.75rem;
-                background-color: rgba(255,255,255, 0.6);
-                padding: 0.5rem;
-                width: fit-content;
-                margin: 0 auto;
-                color: #333;
+                h1 {
+                    font-size: 2rem;
+                }
 
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.2);
-                    transition: 0.4s;
+                p {
+                    font-size: 1.25rem;
+                }
+    
+                img {
+                    width: 64px;
+                }
+
+                a {
+                    border: solid #FB4E4F 2px;
+                    border-radius: 0.25rem;
+                    padding: 0.25rem;
+                    text-decoration: none;
+                    background-color: #FB4E4F;
+                    width: fit-content;
+                    margin-top: 1rem;
+                    box-shadow: 2px 2px 5px black;
+                    color: #152535;
                 }
             }
         }
 
-        #descriptionMainContainers {
+        #frontCtaMainContainer {
             position: absolute;
-            bottom: 2rem;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            border: solid #333 2px;
-            border-radius: 0.75rem;
+            bottom: -4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0.25rem;
+            background-color: #152535;
+            padding: 2rem;
+            width: 400px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            color: white;
+            gap: 2rem 0;
             text-align: center;
-            background-color: rgba(255,255,255, 0.6);
-            padding: 1rem;
-            width: 200px;
-            
-            @include respondTo(sm) {
-                width: 400px;
-            }
 
-            @include respondTo(md) {
-                bottom: 8rem;
-            }
+            #frontCtaContainer {
+                text-align: center;
 
-            &.hide {
-                opacity: 0;
-                transition: 0.6s;
-            }
-
-            .descriptionContainers {
-                .wineBottleIcons {
-                    width: 64px;
-
-                    @include respondTo(sm) {
-                        bottom: 8rem;
-                        width: 128px;
-                    }
-                }
-                
-                .descriptions {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    color: black;
-                }
-            }
-
-            .galleryCta {
-                border: solid #333 2px ;
-                border-radius: 0.75rem;
-                background-color: rgba(255,255,255, 0.6);
-                padding: 0.5rem;
-                color: #333;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 0.75rem;
-                margin: 0.5rem 0;
-
-                &:hover {
-                    color: blue;
+                a {
+                    border: solid #FB4E4F 2px;
+                    border-radius: 0.25rem;
+                    padding: 0.5rem;
+                    text-decoration: none;
+                    color: #FB4E4F;
                 }
             }
         }
+    }
+
+    #cast {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        img {
+            margin-top: 8rem;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+
+    #news {
+        
     }
 }

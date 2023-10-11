@@ -5,37 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cave à vin interactive</title>
+    <title>Graphiste.com template 1</title>
 
     <!-- style sheet -->
 
     <link rel="stylesheet" href="/assets/css/styles.min.css">
-
-    <!-- script js -->
-
-    <script src="/assets/js/showHideDescription.js" defer></script>
 </head>
 <body>
-    <main id="main">
-        <h1 id="title">cave à vin interractive</h1>
-        <div id="wineCaveImgContainer">
-            <img id="wineCaveImg" src="/assets/img/cave_a_vin.png" alt="Cave à vin">
-            <div id="shelfGridContainer">
-                <div id="bite" class="shelfs">france</div>
-                <div class="shelfs">italie</div>
-                <div class="shelfs">Espagne</div>
-                <div class="shelfs">bite</div>
+    <header>
+        <div id="headerMainContainer">
+            <div id="logoContainer">
+                <img src="https://cdn-icons-png.flaticon.com/128/7203/7203904.png" alt="">
             </div>
-            <div id="descriptionMainContainers" class="hide">
-                <div class="descriptionContainers">
-                    <img class="wineBottleIcons" src="https://cdn-icons-png.flaticon.com/128/45/45637.png" alt="">
-                    <div class="descriptions">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quia hic laboriosam tempore pariatur nihil consectetur? Ut fugiat veniam distinctio.</p>
-                    </div>
-                </div>
-                <a class="galleryCta" href="/wineGallery.html#frenchWineSection">Voir dans la gallerie</a>
+            <div id="searchInputContainer">
+                <input type="search" placeholder="Film, auteur, genre...">
+                <img id="searchIcon" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
+            </div>
+            <div id="headerNavigationIconsContainer">
+                <img src="https://cdn-icons-png.flaticon.com/128/3894/3894024.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3602/3602116.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/4203/4203951.png" alt="">
             </div>
         </div>
+    </header>
+    <main>
+        <section id="home">
+            <img id="homeBackgroundImg" src="https://images.ladepeche.fr/api/v1/images/view/5c34d2f53e454659430d33a5/large/image.jpg" alt="">
+            <div id="darkFilter"></div>
+            <div id="homeMainContainer">
+                <div class="homeContainers left">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfQgYaGGkXDt_8WRcMPkaWGEF6KPKa2Sw53V5sksHO5V2XB7rl" alt="" id="homeMainImg">
+                </div>
+                <div class="homeContainers right">
+                    <h1>The Dark Knight : Le Chevalier noir</h1>
+                    <p>Date de sortie : 2008</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt a tempora et voluptate aliquam? Explicabo eius atque optio corrupti laborum</p>
+                    <a href="">En savoir plus</a>
+                </div>
+            </div>
+            <div id="frontCtaMainContainer">
+                <h2>Vous aimez ce film ?</h2>
+                <div id="frontCtaContainer">
+                    <a href="">donnez votre avis</a>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="cast">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkxMzk4MjQ4MF5BMl5BanBnXkFtZTcwMzExODQxOA@@._V1_.jpg" alt="">
+            <img src="https://m1.quebecormedia.com/emp/emp/GettyImages_7980792867344e65-8572-4be3-9f4a-54cf29cf6350_ORIGINAL.jpg?impolicy=crop-resize&x=0&y=0&w=2000&h=3000&width=925" alt="">
+            <img src="https://aws.vdkimg.com/artist/2/5/5/9/2559_photo_scale_160x200.jpg" alt="">
+        </section> -->
+        <section id="news">
+            <div id="newsTopContainer">
+                <h2>Actualités de The Dark Knight : Le Chevalier noir</h2>
+                <div>tout voir</div>
+            </div>
+            <div id="newsMainContainer">
+                <div id="leftNewsContainer" class="news">
+                    <img id="leftNews" src="" alt="">
+                    <div>actu</div>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>avril 2022</p>
+                </div>
+                <div id="rightNewsContainer">
+                    <div class="news">
+                        <img src="" alt="">
+                        <div>actu</div>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>septembre 2020</p>
+                    </div>
+                    <div class="news">
+                        <img src="" alt="">
+                        <div>actu</div>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>mai 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalogue">
+            <div id="catalogueTopContainer">
+                <h2>Films similaires :</h2>
+                <div>tout voir</div>
+            </div>
+            <div id="catalogueContainer">
+                <img src="https://fr.web.img3.acsta.net/medias/nmedia/18/83/56/27/20158098.jpg" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/317800a11686be4e5b6e42acc7c8bff3bf4f07f76db4254528f8dcc0093a720c._RI_TTW_.jpg" alt="">
+                <img src="https://musicart.xboxlive.com/7/59b15100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="">
+                <img src="https://fr.web.img6.acsta.net/medias/04/34/49/043449_af.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/71YFxhhSRPL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <img src="https://fr.web.img6.acsta.net/pictures/210/534/21053452_20131028155459275.jpg" alt="">
+            </div>
+        </section>
+        <section id="social">
+            <div id="socialSectionTopContainer">
+                <h2>Commentaires</h2>
+                <div id="topRightBtn">Trier par</div>
+            </div>
+            <div id="messageContainer">
+                <input type="text" placeholder="Ecrire un commentaire ici...">
+                <input type="submit" placeholder="Envoyer">
+            </div>
+            <div id="comMainContainer">
+                <div id="avatarContainer">
+                    <img src="" alt="">
+                </div>
+                <div id="comContainer">
+                    <div id="nameContainer">
+                        <p>Name</p>
+                        <p>Il y a 2 mois</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, iste?</p>
+                    <div id="comBottomContainer">
+                        <div id="thumbsContainer">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <p>Répondre</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
